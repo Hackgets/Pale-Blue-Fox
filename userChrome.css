@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Pale-Blue-Fox by Hackgets */
+/* See https://github.com/Hackgets/Pale-Blue-Fox */
+
+/* Color */
+:root {
+  --hg-color-1st: #001020;
+  --hg-color-2nd: #203040;
+  --hg-color-3rd: #304860;
+  --button-bgcolor: #00000000 !important;
+  --button-hover-bgcolor: #00000000 !important;
+  --button-active-bgcolor: #00000000 !important;
+  --toolbar-bgcolor: var(--hg-color-2nd) !important;
+  --lwt-sidebar-background-color: var(--hg-color-1st) !important;
+  --lwt-toolbar-field-focus: var(--hg-color-2nd) !important;
+}
+
+/* Font */
+box,
+menu,
+menubar,
+menulist,
+menuitem,
+hbox#statuspanel,
+findbar,
+window,
+tooltip {
+  font-size: 16px !important;
+}
+
+/* Tooltip */
+tooltip {
+  background-color: var(--hg-color-1st) !important;
+  color: var(--toolbar-color) !important;
+  opacity:0.9;
+  border-style: none !important;
+}
+
+/* Remove */
+#tabs-newtab-button,
+#tabbrowser-tabs .tabbrowser-tab .tab-close-button,
+#star-button-box,
+#PanelUI-menu-button,
+hbox.titlebar-spacer[type="pre-tabs"],
+hbox.titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+
+/* Tab */
+:root {
+  --toolbarbutton-border-radius: 0 !important;
+  --tab-border-radius: 0 !important;
+  --tab-block-margin: 0 !important;
+}
+.tabbrowser-tab .tab-stack .tab-background[selected='true'],
+.tabbrowser-tab .tab-stack .tab-background[multiselected='true'] {
+  background-image: none !important;
+  background-color: var(--hg-color-2nd) !important;
+}
+.tabbrowser-tab:hover .tab-stack .tab-background,
+toolbarbutton:hover,
+toolbarbutton:hover image.toolbarbutton-icon:hover {
+  background-color: var(--hg-color-3rd) !important;
+}
+#tabbrowser-arrowscrollbox[scrolledtostart="true"]:hover::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox[scrolledtoend="true"]:hover::part(scrollbutton-down) {
+  background-color: var(--hg-color-1st) !important;
+}
+#navigator-toolbox {
+  background-color: var(--hg-color-1st) !important;
+}
+.tabbrowser-tab .tab-stack .tab-background {
+  box-shadow: none !important;
+}
+.tabbrowser-tab {
+  margin-inline-start: 0 !important;
+}
+.tab-background {
+  margin-left: -4px !important;
+  height: 40px !important;
+}
+
+/* Sidebar */
+#sidebar-box,
+.sidebar-placesTree, #sidebar-search-container {
+  background-color: var(--hg-color-2nd) !important;
+}
+#sidebar-search-container search-textbox#search-box,
+#sidebar-search-container button {
+  -moz-default-appearance: auto !important;
+  background-color: var(--hg-color-1st) !important;
+  border-style: none !important;
+}
+#sidebar-splitter, #sidebar-header {
+  border-style: none !important;
+}
+
+/* Urlbar */
+.toolbarbutton-1[disabled="true"]:hover,
+#nav-bar-overflow-button[disabled="true"]:hover {
+  background-color: var(--hg-color-2nd) !important;
+}
+#urlbar {
+  font-size: 1em !important;
+}
+.identity-box-button {
+  background-color: var(--hg-color-2nd) !important;
+}
+.identity-box-button:hover,
+#tracking-protection-icon-container:hover {
+  background-color: var(--hg-color-3rd) !important;
+}
+#urlbar-input-container {
+  background-color: var(--hg-color-2nd) !important;
+  border-style: none !important;
+}
+#urlbar-container {
+  margin-left: 0 !important;
+}
+#urlbar[focused='true'] #urlbar-background {
+  box-shadow: none !important;
+}
+#navigator-toolbox {
+  border: none !important;
+}
+.urlbarView-url {
+  color: #ffffff80 !important;
+}
+#urlbar-zoom-button {
+  font-size: 1em !important;
+  background-color: var(--hg-color-3rd) !important;
+  margin-block: 0 !important;
+  padding: 0 0.5em !important;
+}
+
+/* Bookmark Toolbar */
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+  margin: 0 !important;
+}
