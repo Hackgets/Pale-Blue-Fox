@@ -40,6 +40,8 @@ tooltip {
 /* Remove */
 #tabs-newtab-button,
 #tabbrowser-tabs .tabbrowser-tab .tab-close-button,
+#back-button,
+#forward-button,
 #star-button-box,
 #PanelUI-menu-button,
 hbox.titlebar-spacer[type="pre-tabs"],
@@ -129,9 +131,13 @@ toolbarbutton:hover image.toolbarbutton-icon:hover {
 }
 #urlbar-zoom-button {
   font-size: 1em !important;
-  background-color: var(--hg-color-3rd) !important;
-  margin-block: 0 !important;
+  background-color: #00000000 !important;
+  margin: 0 !important;
+  margin-inline: 0 !important;
   padding: 0 0.5em !important;
+}
+#urlbar-zoom-button:hover {
+  background-color: var(--hg-color-3rd) !important;
 }
 
 /* Bookmark Toolbar */
